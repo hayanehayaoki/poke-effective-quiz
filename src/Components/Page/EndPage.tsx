@@ -36,7 +36,7 @@ const CopyArea: FC<CopyAreaProps> = memo(function CopyArea(props: CopyAreaProps)
 	const { correct, time } = props;
 	const inputRef = useRef<HTMLTextAreaElement | null>(null);
 
-	const value: string = `ポケモン耐性クイズ ${time}で10問中、${correct}問正解！`;
+	const value: string = `ポケモン耐性クイズ ${time}で10問中、${correct}問正解！\nhttps://poke-effective-quiz.vercel.app/`;
 
 	return (
 		<div className="Page__endPage__copyArea">
