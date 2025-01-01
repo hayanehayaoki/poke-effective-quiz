@@ -1,0 +1,228 @@
+.Answer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__selects {
+		margin: 20px 0px;
+		gap: 20px;
+
+		> select {
+			margin: 0px 10px;
+		}
+	}
+
+	&__buttons {
+		margin: 20px 0px;
+		justify-content: center;
+		gap: 10px;
+
+		display: grid;
+
+		grid-template-columns: 100px 100px 100px 100px 100px 100px;
+		grid-template-rows: 40px 40px 40px;
+
+		@media screen and (max-width: 700px) {
+			grid-template-columns: 100px 100px 100px 100px;
+			grid-template-rows: 40px 40px 40px 40px 40px;
+		}
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--normal {
+			$normalColor: rgb(174, 174, 174);
+
+			&--deselected {
+				color: color-mix(in srgb, $normalColor 70%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $normalColor;
+			}
+		}
+		&--honoo {
+			$honooColor: rgb(255, 167, 102);
+
+			&--deselected {
+				color: color-mix(in srgb, $honooColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $honooColor;
+			}
+		}
+		&--mizu {
+			$mizuColor: rgb(100, 197, 247);
+
+			&--deselected {
+				color: color-mix(in srgb, $mizuColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $mizuColor;
+			}
+		}
+		&--kusa {
+			$kusaColor: rgb(154, 195, 14);
+			&--deselected {
+				color: color-mix(in srgb, $kusaColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $kusaColor;
+			}
+		}
+		&--denki {
+			$denkiColor: rgb(231, 212, 0);
+			&--deselected {
+				color: color-mix(in srgb, $denkiColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $denkiColor;
+			}
+		}
+		&--koori {
+			$kooriColor: rgb(96, 233, 245);
+			&--deselected {
+				color: color-mix(in srgb, $kooriColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $kooriColor;
+			}
+		}
+		&--kakutou {
+			$kakutouColor: rgb(238, 105, 105);
+			&--deselected {
+				color: color-mix(in srgb, $kakutouColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $kakutouColor;
+			}
+		}
+		&--doku {
+			$dokuColor: rgb(171, 122, 202);
+			&--deselected {
+				color: color-mix(in srgb, $dokuColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $dokuColor;
+			}
+		}
+		&--jimen {
+			$jimenColor: rgb(200, 168, 65);
+			&--deselected {
+				color: color-mix(in srgb, $jimenColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $jimenColor;
+			}
+		}
+		&--hikou {
+			$hikouColor: rgb(100, 167, 241);
+			&--deselected {
+				color: color-mix(in srgb, $hikouColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $hikouColor;
+			}
+		}
+		&--esper {
+			$esperColor: rgb(235, 127, 244);
+			&--deselected {
+				color: color-mix(in srgb, $esperColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $esperColor;
+			}
+		}
+		&--musi {
+			$musiColor: rgb(81, 203, 90);
+			&--deselected {
+				color: color-mix(in srgb, $musiColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $musiColor;
+			}
+		}
+		&--iwa {
+			$iwaColor: rgb(250, 199, 39);
+			&--deselected {
+				color: color-mix(in srgb, $iwaColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $iwaColor;
+			}
+		}
+		&--ghost {
+			$ghostColor: rgb(117, 110, 180);
+			&--deselected {
+				color: color-mix(in srgb, $ghostColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $ghostColor;
+			}
+		}
+		&--dragon {
+			$dragonColor: rgb(255, 136, 89);
+			&--deselected {
+				color: color-mix(in srgb, $dragonColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $dragonColor;
+			}
+		}
+		&--aku {
+			$akuColor: rgb(104, 129, 212);
+			&--deselected {
+				color: color-mix(in srgb, $akuColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $akuColor;
+			}
+		}
+		&--hagane {
+			$haganeColor: rgb(129, 138, 164);
+			&--deselected {
+				color: color-mix(in srgb, $haganeColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $haganeColor;
+			}
+		}
+		&--fairy {
+			$fairyColor: rgb(252, 119, 153);
+			&--deselected {
+				color: color-mix(in srgb, $fairyColor 90%, rgb(0, 0, 0));
+			}
+			&--selected {
+				color: rgb(255, 255, 255);
+				background-color: $fairyColor;
+			}
+		}
+	}
+
+	&__bottomButton {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50vw;
+		height: 50px;
+	}
+}
