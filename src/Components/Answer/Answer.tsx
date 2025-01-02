@@ -6,7 +6,7 @@ import { Explanation } from "./Explanation";
 import { TypeSelect } from "./TypeSelect";
 
 export const Answer: FC = memo(function Answer() {
-	const { explanation } = useContext(AppContext);
+	const { explanation, index } = useContext(AppContext);
 
 	const answer = useAnswer();
 	const next = useNext();
@@ -19,7 +19,7 @@ export const Answer: FC = memo(function Answer() {
 			{explanation ? (
 				<>
 					<button className="Answer__bottomButton" onClick={next}>
-						次の問題
+						{index < 10 ? "次の問題" : "結果発表"}
 					</button>
 					<Explanation />
 				</>
