@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import "./App.css";
-import { Page } from "./Components/Page";
+import { Page } from "./Components/Page/Page";
 import { AppContext, AppContextProps } from "./Constants/AppContext";
 import "./Styles/App.scss";
 

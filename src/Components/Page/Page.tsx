@@ -1,9 +1,9 @@
 import { FC, memo, useContext } from "react";
-import { AppContext } from "../Constants/AppContext";
-import { Answer } from "./Answer/Answer";
-import { EndPage } from "./Page/EndPage";
-import { StartPage } from "./Page/StartPage";
-import { Problem } from "./Problem/Problem";
+import { AppContext } from "../../Constants/AppContext";
+import { Answer } from "../Answer/Answer";
+import { Problem } from "../Problem/Problem";
+import { EndPage } from "./EndPage";
+import { StartPage } from "./StartPage";
 
 export const Page: FC = memo(function Page() {
 	const { index } = useContext(AppContext);
