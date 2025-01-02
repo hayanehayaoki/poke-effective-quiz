@@ -18,9 +18,6 @@ export const StartPage: FC = memo(function StartPage() {
 			<button className="Page__startButton" onClick={start}>
 				はじめる
 			</button>
-			<p className="Page__startPage__caution">
-				クリアタイム計測機能を一時的に停止しています。
-			</p>
 
 			<a className="Page__link" href="https://x.com/aryr_asmy">
 				作者X
